@@ -1,15 +1,18 @@
-import { Footer } from "./Footer";
-import { Header } from "./Header";
-import { Post } from "./Post";
+
+import Greeting from "./Greeting";
+
 
 
 function App(){
   return (
     <>              
-    <Header />
-    <Post />
-    <Footer />
 
+    <Greeting
+     currentUser = {"Abdirahman"}
+     Role  = {"Admin"}
+     age  = {20}
+    />
+    
     </>
 
   )
