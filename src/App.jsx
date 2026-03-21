@@ -1,19 +1,13 @@
-
-import Greeting from "./Greeting";
+import { ToggleButton } from "./ToggleButton";
 
 
 
 function App(){
-  return (
-    <>              
 
-    <Greeting
-     currentUser = {"Abdirahman"}
-     Role  = {"Admin"}
-     age  = {20}
-    />
-    
-    </>
+
+  return (
+
+    <ToggleButton />
 
   )
 
