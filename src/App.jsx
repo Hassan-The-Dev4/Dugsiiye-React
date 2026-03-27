@@ -1,4 +1,7 @@
-import { ToggleButton } from "./ToggleButton";
+
+import { ShoppingCart } from "./ShoppingCart";
+
+
 
 
 
@@ -7,8 +10,8 @@ function App(){
 
   return (
 
-    <ToggleButton />
-
+    <ShoppingCart />
+  
   )
 
 }
