@@ -1,18 +1,13 @@
+import { Greeting } from "./Greeting";
 
-import { ShoppingCart } from "./ShoppingCart";
-
-
-
-
-
-function App(){
+function App() {
 
 
   return (
 
-    <ShoppingCart />
-  
+      <Greeting />
   )
+
 
 }
 
