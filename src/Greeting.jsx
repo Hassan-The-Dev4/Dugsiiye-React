@@ -37,9 +37,6 @@ export const Greeting = () =>{
 
             />
             </div>
-
-
-
         </div>
     )
 }
