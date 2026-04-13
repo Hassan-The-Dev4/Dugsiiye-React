@@ -4,6 +4,7 @@ import { Counterdown } from "./Counterdown";
 import { Greeting } from "./Greeting";
 import { MouseTracker } from "./MouseTracker";
 import { UserFetching } from "./UserFetching";
+import Counter from "./Counter";
 
 function App() {
   
@@ -25,7 +26,10 @@ function App() {
       // </div>
 
        <div>
-       <LoginForm />
+       {/* <LoginForm /> */}
+
+
+       <Counter />
        </div>
 
   )
