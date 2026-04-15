@@ -5,13 +5,14 @@ import { Greeting } from "./Greeting";
 import { MouseTracker } from "./MouseTracker";
 import { UserFetching } from "./UserFetching";
 import Counter from "./Counter";
+import { DoubleCounter } from "./DoubleCounter";
 
 function App() {
   
-    const users = [
-      { id: 1, name: 'Abdirahman', email: 'abdirahman@gmail.com.com' },
-      { id: 2, name: 'Hassan', email: 'Hassan12@gmail.com' },
-    ];
+    // const users = [
+    //   { id: 1, name: 'Abdirahman', email: 'abdirahman@gmail.com.com' },
+    //   { id: 2, name: 'Hassan', email: 'Hassan12@gmail.com' },
+    // ];
 
   return (
 
@@ -20,17 +21,12 @@ function App() {
       // <MouseTracker />
       //  <Counterdown />
       // <UserFetching />
-
-      // <div>
       //   <UserList users={users} />
-      // </div>
-
-       <div>
-       {/* <LoginForm /> */}
+      //  <LoginForm />
+      //  <Counter />
 
 
-       <Counter />
-       </div>
+      <DoubleCounter />
 
   )
 
