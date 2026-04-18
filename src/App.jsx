@@ -6,6 +6,7 @@ import { MouseTracker } from "./MouseTracker";
 import { UserFetching } from "./UserFetching";
 import Counter from "./Counter";
 import { DoubleCounter } from "./DoubleCounter";
+import MultiStepForm from "./MultiStepForm";
 
 function App() {
   
@@ -24,9 +25,8 @@ function App() {
       //   <UserList users={users} />
       //  <LoginForm />
       //  <Counter />
-
-
-      <DoubleCounter />
+      // <DoubleCounter />
+      <MultiStepForm />
 
   )
 
