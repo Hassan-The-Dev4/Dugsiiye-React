@@ -1,42 +1,16 @@
-import { useEffect,useState } from "react";
 
+import React, { useContext } from 'react';
+import { LanguageContext } from './LanguageContext';
 
-export const Greeting = () =>{
+export function Greeting() {
+  const language = useContext(LanguageContext);
 
-    const [name, setName] = useState("")
-    const [greeting, setGreeting] = useState("Hello")
+  const messages = {
+    en: 'Hello!',
+    es: '¡Hola!',
+  };
 
-    useEffect(()=> {
-        if(!name){
-            document.title = "Welcome!";
-        }else{
-            document.title = `${greeting}, ${name}`;
-        }
-        
-    },[name,greeting]);
-
-    return (
-        <div>
-
-            <div>
-            <h2>Inter Your name</h2>
-            <input 
-            type="text"
-            onChange={(e)=> setName(e.target.value)}
-            value={name}
-
-            />
-            </div>
-
-            <div>
-            <h2>Choose your name</h2>
-            <input 
-            type="text"
-            onChange={(e)=> setGreeting(e.target.value)}
-            value={greeting}
-
-            />
-            </div>
-        </div>
-    )
+  return <h1>{messages[language]}</h1>;
 }
+
+

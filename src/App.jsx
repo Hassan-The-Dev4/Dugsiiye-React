@@ -1,19 +1,27 @@
+import { useState } from "react";
 import LoginForm from "./LoginForm";
 import UserList from "./UserList";
 import { Counterdown } from "./Counterdown";
-import { Greeting } from "./Greeting";
 import { MouseTracker } from "./MouseTracker";
 import { UserFetching } from "./UserFetching";
 import Counter from "./Counter";
 import { DoubleCounter } from "./DoubleCounter";
 import MultiStepForm from "./MultiStepForm";
 
+
+import { LanguageContext } from "./LanguageContext";
+import { Greeting } from "./Greeting";
+
+
+
 function App() {
   
-    // const users = [
-    //   { id: 1, name: 'Abdirahman', email: 'abdirahman@gmail.com.com' },
-    //   { id: 2, name: 'Hassan', email: 'Hassan12@gmail.com' },
-    // ];
+      const [language, setLanguage] = useState('en');
+
+      const toggleLanguage = () => {
+        setLanguage((prevLang) => (prevLang === 'en' ? 'es' : 'en'));
+      };
+
 
   return (
 
@@ -26,7 +34,14 @@ function App() {
       //  <LoginForm />
       //  <Counter />
       // <DoubleCounter />
-      <MultiStepForm />
+      // <MultiStepForm />
+
+      <LanguageContext.Provider value={language}>
+      <button onClick={toggleLanguage}>
+        Switch to {language === 'en' ? 'Spanish' : 'English'}
+      </button>
+      <Greeting />
+    </LanguageContext.Provider>
 
   )
 
