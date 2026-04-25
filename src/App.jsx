@@ -14,6 +14,7 @@ import { Greeting } from "./Greeting";
 import CartContext from './CartContext';
 import ProductItem from './ProductItem';
 import CartSummary from './CartSummary';
+import ContactForm from "./ContactForm";
 
 
 
@@ -44,12 +45,8 @@ function App() {
       //  <Counter />
       // <DoubleCounter />
       // <MultiStepForm />
+      <ContactForm />
 
-       <CartContext.Provider value={value}>
-          <ProductItem itemId={1} itemName="Labtop" price={240.99} />
-          <ProductItem itemId={2} itemName="Keyboard" price={44.99} />
-          <CartSummary />
-       </CartContext.Provider>
 
   )
 
