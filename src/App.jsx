@@ -15,6 +15,7 @@ import CartContext from './CartContext';
 import ProductItem from './ProductItem';
 import CartSummary from './CartSummary';
 import ContactForm from "./ContactForm";
+import { TodoApp } from "./TodoApp/TodoApp";
 
 
 
@@ -45,7 +46,8 @@ function App() {
       //  <Counter />
       // <DoubleCounter />
       // <MultiStepForm />
-      <ContactForm />
+      // <ContactForm />
+      <TodoApp/>
 
 
   )
